@@ -10,7 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC1_LoginWithEmptyPassword extends TC2_LoginApp{
 
-	public static void main(String[] args) {		
+	public static void main(String[] args) {
+        //Using webdriver manager to setup chrome driver		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://tekarch-b7-dev-ed.develop.my.salesforce.com");
